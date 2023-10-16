@@ -1,0 +1,15 @@
+---
+title: "Hyderabad Leaflet"
+author: "Abhishek Reddy"
+date: "16/10/2023"
+output: html_document
+---
+
+```{r}
+library(leaflet)
+library(dplyr) # Load the dplyr package
+leaflet() %>%
+  setView(lng = 78.491684, lat =  17.387140, zoom = 13) %>%
+  addTiles() %>%
+  addMarkers(lng = 78.491684, lat =  17.387140, popup = "Hello, this is Hyderabad")
+```
